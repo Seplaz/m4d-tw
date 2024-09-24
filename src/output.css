@@ -565,12 +565,46 @@ video {
   height: 1.5rem;
 }
 
+.h-dvh{
+  height: 100dvh;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.max-h-max{
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
 .flex-auto{
   flex: 1 1 auto;
 }
 
-.origin-center{
-  transform-origin: center;
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.shrink{
+  flex-shrink: 1;
+}
+
+.grow{
+  flex-grow: 1;
 }
 
 .flex-col{
@@ -581,8 +615,24 @@ video {
   flex-wrap: wrap;
 }
 
+.content-start{
+  align-content: flex-start;
+}
+
+.content-stretch{
+  align-content: stretch;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.items-stretch{
+  align-items: stretch;
 }
 
 .justify-center{
@@ -593,6 +643,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-stretch{
+  justify-content: stretch;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -601,24 +655,29 @@ video {
   gap: 1.5rem;
 }
 
+.self-start{
+  align-self: flex-start;
+}
+
 .self-end{
   align-self: flex-end;
 }
 
-.text-clip{
-  text-overflow: clip;
+.self-stretch{
+  align-self: stretch;
 }
 
-.text-wrap{
-  text-wrap: wrap;
+.justify-self-start{
+  justify-self: start;
 }
 
-.text-nowrap{
-  text-wrap: nowrap;
+.whitespace-normal{
+  white-space: normal;
 }
 
-.text-pretty{
-  text-wrap: pretty;
+.break-normal{
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .rounded-xl{
@@ -647,8 +706,8 @@ video {
   padding: 1.5rem;
 }
 
-.align-middle{
-  vertical-align: middle;
+.text-start{
+  text-align: start;
 }
 
 .text-2xl{
@@ -656,29 +715,14 @@ video {
   line-height: 2rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -714,10 +758,6 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:border:hover{
-  border-width: 1px;
 }
 
 .hover\:border-e:hover{
@@ -774,25 +814,8 @@ video {
   background-color: rgb(38 173 80 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-white:hover{
-  fill: #ffffff;
-}
-
-.group:hover .group-hover\:bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:to-white{
-  --tw-gradient-to: #ffffff var(--tw-gradient-to-position);
-}
-
 .group:hover .group-hover\:fill-white{
   fill: #ffffff;
-}
-
-.group:hover .group-hover\:fill-black{
-  fill: #000000;
 }
 
 .group:hover .group-hover\:text-white{
@@ -800,33 +823,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px){
   .sm\:justify-start{
     justify-content: flex-start;
   }
 
-  .sm\:justify-center{
-    justify-content: center;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .sm\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-5xl{
